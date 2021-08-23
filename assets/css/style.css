@@ -16,6 +16,35 @@ body {
 main {
     width: 100%;
     max-width: 1248px;
-    padding: 0 5%;
-    border: 2px solid red;
+    margin: 4px;
+    padding: 0 1%;
 }
+
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+Header a {
+    font-size: 0.8em;
+}
+
+header img {
+    padding-top: 20px;
+    display: block;
+    width: 80px;
+}
+
+header nav {
+    display: flex;
+}
+
+    header nav a {
+        padding-top: 20px;
+        padding-right: 40px;
+        border-top: 3px blue solid;
+    }
