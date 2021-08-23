@@ -31,7 +31,7 @@ main {
 header {
     display: flex;
     justify-content: flex-end;
-    height: 70px;
+    flex-wrap: wrap;
 }
 
 header div.logo-container {
@@ -58,6 +58,7 @@ header a {
     header div.navigation-button a {
         padding: 40px 25px 0;
     }
+
     header div.navigation-button a:hover {
         border-top: 2px #0065FC solid;
         padding-top: 38px;
@@ -73,8 +74,37 @@ header a {
 /* Header responsive */
 
 @media screen and (max-width: 540px) {
-    header div.navigation-button {
+
+    header img {
+        width: 130px;
+    }
+    header nav {
         width: 100%;
+        order: 3;
+    }
+
+    header div.navigation-button a, header div.signin-button a {
+        font-size: 1.2em;
+    }
+
+    header div.navigation-button a {
+        width: 50%;
+        text-align-last: center;
+        padding-bottom: 20px;
+    }
+
+        header div.navigation-button a:hover {
+            border-top: none;
+            padding-top: 40px;
+        }
+
+        /* mise en forme du lien sur mobile */
+        /*header div.navigation-button a:visited { 
+            border-bottom: 2px #0065FC solid;
+        }*/
+
+    header div.signin-button a {
+        padding-top: 50px;
     }
 }
 
