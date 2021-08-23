@@ -16,8 +16,7 @@ body {
 main {
     width: 100%;
     max-width: 1248px;
-    margin: 4px;
-    padding: 0 1%;
+    padding: 0 3%;
 }
 
 
@@ -26,25 +25,42 @@ main {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-Header a {
-    font-size: 0.8em;
+    height: 70px;
 }
 
 header img {
-    padding-top: 20px;
     display: block;
     width: 80px;
+    padding-top: 30px;
 }
 
 header nav {
     display: flex;
+    flex-wrap: wrap;
 }
 
-    header nav a {
-        padding-top: 20px;
-        padding-right: 40px;
-        border-top: 3px blue solid;
+header > nav > div {
+    display: flex;
+}
+
+header nav a {
+    font-size: 0.8em;
+    padding-top: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+    header div.navigation-button a {
+        padding: 40px 25px 0;
     }
+    header div.navigation-button a:hover {
+        border-top: 2px #0065FC solid;
+        padding-top: 38px;
+        color: #0065FC;
+    }
+
+    header div.signin-button a {
+        color: #0065FC;
+        margin-left: 25px;
+    }
+
