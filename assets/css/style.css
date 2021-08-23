@@ -19,13 +19,23 @@ main {
     padding: 0 3%;
 }
 
+    @media screen and (max-width: 979px) {
+        main {
+            padding: 0 5%;
+        }
+    }
+
 
 /* HEADER */
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 70px;
+}
+
+header div.logo-container {
+    flex-grow: 2;
 }
 
 header img {
@@ -34,16 +44,11 @@ header img {
     padding-top: 30px;
 }
 
-header nav {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-header > nav > div {
+header div.navigation-button, header div.signin-button {
     display: flex;
 }
 
-header nav a {
+header a {
     font-size: 0.8em;
     padding-top: 40px;
     text-decoration: none;
@@ -63,4 +68,13 @@ header nav a {
         color: #0065FC;
         margin-left: 25px;
     }
+
+ 
+/* Header responsive */
+
+@media screen and (max-width: 540px) {
+    header div.navigation-button {
+        width: 100%;
+    }
+}
 
