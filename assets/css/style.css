@@ -214,7 +214,7 @@ section#search > div.search-bar-container div:nth-child(2) {
 
         section#search > div.search-bar-container {
             width: 100%;
-            max-width: 350px;
+            max-width: 500px;
             margin-top: 30px;        
             border-radius: 20px;        
         }
@@ -230,6 +230,7 @@ section#search > div.search-bar-container div:nth-child(2) {
 
         section#search > div.search-bar-container form > input#city {
             font-size: 22px;
+            font-weight: 700;
             padding: 0 0 0 22px;
         }
         
@@ -295,6 +296,36 @@ section#search div.filters-container > div.filter-btn > div {
     }
 
 
-
-
     /* Filters - Responsive */
+
+    @media screen and (max-width: 540px) {
+        
+        section#search div.filters-container > p {
+            font-weight: 700;
+            width: 100%;
+            font-size: 22px;
+        }
+
+        section#search div.filters-container > div.filter-btn {
+            height: 60px;
+            border-radius: 30px;
+        }
+
+        section#search div.filters-container > div.filter-btn > div {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            margin-left: ;
+            margin-right: ;
+        }
+
+            section#search div.filters-container > div.filter-btn > div > i {
+                font-size: 22px;;
+            }
+
+        section#search div.filters-container > div.filter-btn > p {
+            font-weight: 700;
+            font-size: 20px;
+            margin-right: 20px;
+        }
+    }
