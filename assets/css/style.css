@@ -15,19 +15,31 @@ body {
 
 main {
     width: 100%;
-    max-width: 1248px;
-    padding: 0 3%;
+    max-width: 1440px;
 }
-
-    @media screen and (max-width: 979px) {
-        main {
-            padding: 0 5%;
-        }
-    }
 
 section.main-section {
     margin-bottom: 40px;
 }
+
+header, section.main-section {
+    padding: 0 45px;
+}
+
+
+    /* Général - Responsive */
+
+    @media screen and (max-width: 540px) {
+
+        header, section#search {
+            padding: 0 5%;
+        }
+
+        section#results, section#activities {
+            padding: 0 0;
+        }
+    }
+
 
 /* HEADER */
 
@@ -114,7 +126,6 @@ header a {
 
 
 /* SECTION - SEARCH */
-
 
 section#search > h1 {
     font-size: 18px;
@@ -246,6 +257,7 @@ section#search > div.search-bar-container div:nth-child(2) {
             height: 60px;
         }
     }
+
 
 /* Filters */
 
@@ -386,3 +398,235 @@ section#search > div.info-results-container p {
             }
 
         }
+
+
+/* SECTION - RESULTS */
+
+section#results {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#results > div.results-container {
+    padding: 40px 40px;
+    background-color: #F2F2F2;
+    border-radius: 16px;
+}
+
+section#results > div.results-container > h3 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+section#results > .results-container > .vignettes-container {
+    
+}
+
+section#results > div.results-container div.vignette {
+    border-radius: 16px;
+    margin-bottom: 30px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 4px 4px 10px 1px #DFDFDF;
+}
+
+section#results > div.results-container div.vignette .img-vignette {
+    background-color: lightgrey;
+    border: 5px solid white;
+}
+
+    section#results > div.results-container div.vignette h4 {
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    section#results > div.results-container div.vignette p {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+        section#results > div.results-container div.vignette p span {
+            font-weight: 600;
+        }
+
+section#results > .results-container .vignette .texte-vignette {
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+    section#results > .results-container .vignette .texte-vignette > div  {
+        display: flex;
+    }
+
+    section#results > .results-container .vignette .texte-vignette i {
+        font-size: 12px;
+        display: block;
+    }
+
+
+    i.blue {
+        color: #0065FC;
+    }
+
+    i.grey {
+        color: #dfdfdf;
+    }
+
+
+/* Hébergements */
+
+section#results > div.hebergements-container {
+    width: 66%;
+    margin-right: 40px;
+}
+
+section#results > div.hebergements-container p {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+section#results > div.hebergements-container > .vignettes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section#results > div.hebergements-container .vignette-hebergement {
+    width: 31%;
+}
+
+section#results > div.hebergements-container .vignette-hebergement .img-hebergement {
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+    height: 126px;
+}
+
+    section#results > div.hebergements-container .vignette-hebergement .img-hebergement.img-1{
+        background: center / cover url("../img/auberge-cannebiere-small-750x500.jpg") lightgrey;
+    }
+
+    section#results > div.hebergements-container .vignette-hebergement .img-hebergement.img-2{
+        background: center / cover url("../img/hotel-du-port-small-684X456.jpg") lightgrey;
+    }
+
+    section#results > div.hebergements-container .vignette-hebergement .img-hebergement.img-3{
+        background: center / cover url("../img/hotel-les-mouettes-small-750x500.jpg") lightgrey;
+    }
+
+    section#results > div.hebergements-container .vignette-hebergement .img-hebergement.img-4{
+        background: center / cover url("../img/hotel-de-la-mer-small-500x467.jpg") lightgrey;
+    }
+
+    section#results > div.hebergements-container .vignette-hebergement .img-hebergement.img-5{
+        background: center / cover url("../img/auberge-le-panier-small-652x367.jpg") lightgrey;
+    }
+
+    section#results > div.hebergements-container .vignette-hebergement .img-hebergement.img-6{
+        background: center / cover url("../img/hotel-chez-amina-small-486x729.jpg") lightgrey;
+    }
+
+section#results > div.hebergements-container > p {
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+
+/* Populaires */
+
+section#results > .populaires-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+section#results > .populaires-container .vignettes-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section#results > .populaires-container div.vignette-populaire {
+    width: 100%;
+    height: 28%;
+    display: flex;
+    margin-bottom: 0!important;
+}
+
+section#results > .populaires-container .vignette-populaire .img-populaire {
+    border-radius: 16px  0 0 16px;
+    width: 40%;
+}
+
+    section#results > div.populaires-container .vignette-populaire .img-populaire.img-1{
+        background: center / cover url("../img/hotel-le-soleil-du-matin-small-532x355.jpg") lightgrey;
+    }
+
+    section#results > div.populaires-container .vignette-populaire .img-populaire.img-2{
+        background: center / cover url("../img/au-coeur-de leau-chambre-dhotes-small-504x378.jpg") lightgrey;
+    }
+
+    section#results > div.populaires-container .vignette-populaire .img-populaire.img-3{
+        background: center / cover url("../img/hotel-tou-bleu-et-blanc-small-500x750.jpg") lightgrey;
+    }
+
+    section#results > div.populaires-container .vignette-populaire .texte-vignette {
+        padding-right: 20px;
+    }
+
+
+    /* Results - Responsive */
+
+    @media screen and (max-width: 540px) {
+
+        section#results > div.results-container {
+            width: 100%;
+            border-radius: 0;
+            padding: 35px 5%;
+            border-radius: 0;
+        }
+
+        section#results > div.results-container > h3 {
+            font-size: 24px;
+            margin-bottom: 17px;
+        }
+
+        section#results > div.results-container div.vignette {
+            box-shadow: 2px 2px 15px 1px #DFDFDF;
+        }
+
+        section#results > div.results-container div.vignette h4 {
+            font-size: 18px;
+        }
+    
+        section#results > div.results-container div.vignette p {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        section#results > .results-container .vignette .texte-vignette i {
+            font-size: 13px;
+        }
+
+        /* Hébergement - Responsive */
+
+        section#results > .results-container.hebergements-container {
+            background-color: white;
+            margin-right: 0;
+            order: 2;
+        }
+
+        section#results > div.hebergements-container .vignette-hebergement {
+            width: 100%;
+        }
+
+        section#results > div.hebergements-container .vignette-hebergement .img-hebergement {
+            height: 130px;
+        }
+
+
+    }
+
