@@ -87,42 +87,42 @@ header a {
     }
 
  
-/* Header responsive */
+    /* Header responsive */
 
-@media screen and (max-width: 540px) {
+    @media screen and (max-width: 540px) {
 
-    header img {
-        width: 130px;
-    }
-    header nav {
-        width: 100%;
-        order: 3;
-    }
-
-    header div.navigation-button a, header div.signin-button a {
-        font-size: 1.3em;
-    }
-
-    header div.navigation-button a {
-        width: 50%;
-        text-align-last: center;
-        padding-bottom: 20px;
-    }
-
-        header div.navigation-button a:hover {
-            border-top: none;
-            padding-top: 40px;
+        header img {
+            width: 100px;
+        }
+        header nav {
+            width: 100%;
+            order: 3;
         }
 
-        /* mise en forme du lien sur mobile */
-        /*header div.navigation-button a:visited { 
-            border-bottom: 2px #0065FC solid;
-        }*/
+        header div.navigation-button a, header div.signin-button a {
+            font-size: 16px;
+        }
 
-    header div.signin-button a {
-        padding-top: 50px;
+        header div.navigation-button a {
+            width: 50%;
+            text-align-last: center;
+            padding-bottom: 20px;
+        }
+
+            header div.navigation-button a:hover {
+                border-top: none;
+                padding-top: 40px;
+            }
+
+            /* mise en forme du lien sur mobile */
+            /*header div.navigation-button a:visited { 
+                border-bottom: 2px #0065FC solid;
+            }*/
+
+        header div.signin-button a {
+            padding-top: 50px;
+        }
     }
-}
 
 
 /* SECTION - SEARCH */
@@ -144,13 +144,13 @@ section#search > h2 {
     @media screen and (max-width: 540px) {
 
         section#search > h1 {
-            font-size: 1.8em;
+            font-size: 22px;
             line-height: 1.3em;
             margin-bottom: 16px;
         }
 
         section#search > h2 {
-            font-size: 22px;
+            font-size: 16px;
         }        
     }
 
@@ -230,20 +230,24 @@ section#search > div.search-bar-container div:nth-child(2) {
             width: 100%;
             max-width: 500px;
             margin-top: 30px;        
-            border-radius: 20px;        
+            border-radius: 16px;        
         }
 
         section#search > div.search-bar-container > div:first-child, section#search > div.search-bar-container form {
-            height: 60px;
+            height: 50px;
+        }
+
+        section#search > div.search-bar-container > div:first-child {
+            border-radius: 16px 0 0 16px;
         }
 
         section#search > div.search-bar-container i {
-            font-size: 22px;
-            padding: 0 22px;
+            font-size: 18px;
+            padding: 0 18px;
         }
 
         section#search > div.search-bar-container form > input#city {
-            font-size: 22px;
+            font-size: 18px;
             font-weight: 700;
             padding: 0 0 0 22px;
         }
@@ -252,9 +256,9 @@ section#search > div.search-bar-container div:nth-child(2) {
             display: block;
             background-color: #0065FC;
             border: none;
-            border-radius: 20px;
+            border-radius: 16px;
             color: white;
-            height: 60px;
+            height: 50px;
         }
     }
 
@@ -323,28 +327,29 @@ section#search div.filters-container > div.filter-btn > div {
         section#search div.filters-container > p {
             font-weight: 700;
             width: 100%;
-            font-size: 22px;
+            font-size: 18px;
         }
 
         section#search div.filters-container > div.filter-btn {
-            height: 60px;
-            border-radius: 30px;
+            height: 50px;
+            border-radius: 25px;
+            margin-right: 10px;
         }
 
         section#search div.filters-container > div.filter-btn > div {
-            height: 60px;
-            width: 60px;
+            height: 50px;
+            width: 50px;
             border-radius: 50%;
         }
 
             section#search div.filters-container > div.filter-btn > div > i {
-                font-size: 22px;;
+                font-size: 18px;;
             }
 
         section#search div.filters-container > div.filter-btn > p {
             font-weight: 700;
-            font-size: 20px;
-            margin-right: 20px;
+            font-size: 16px;
+            margin-right: 15px;
         }
     }
 
@@ -385,18 +390,17 @@ section#search > div.info-results-container p {
         }
 
         section#search > div.info-results-container i {
-            width: 39px;
-            height: 30px;
-            font-size: 20px;
-            line-height: 28px;
+            width: 30px;
+            height: 23px;
+            font-size: 16px;
+            line-height: 20px;
             border-radius: 15px;
-            margin-right: 15px;
+            margin-right: 10px;
         }
 
         section#search > div.info-results-container p {
-                font-size: 22px;
+                font-size: 16px;
             }
-
         }
 
 
