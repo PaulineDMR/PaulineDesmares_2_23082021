@@ -102,21 +102,26 @@ header a {
             font-size: 16px;
         }
 
+        header div.navigation-button {
+            margin: 0 -25px;
+        }
+
         header div.navigation-button a {
             width: 50%;
-            text-align-last: center;
-            padding-bottom: 20px;
+            text-align: center;
+            padding: 30px 25px 20px;
+            border-bottom: 3px #F2F2F2 solid;
         }
 
             header div.navigation-button a:hover {
                 border-top: none;
                 padding-top: 40px;
             }
-
-            /* mise en forme du lien sur mobile */
-            /*header div.navigation-button a:visited { 
-                border-bottom: 2px #0065FC solid;
-            }*/
+        
+        header div.navigation-button > a:first-child {
+            color: #0065FC;
+            border-bottom: 3px #0065FC solid;
+        }
 
         header div.signin-button a {
             padding-top: 50px;
