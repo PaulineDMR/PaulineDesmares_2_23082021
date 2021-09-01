@@ -115,7 +115,9 @@ header a {
 
             header div.navigation-button a:hover {
                 border-top: none;
-                padding-top: 40px;
+                padding-top: 30px;
+                border-top: none;
+                color: black;
             }
         
         header div.navigation-button > a:first-child {
