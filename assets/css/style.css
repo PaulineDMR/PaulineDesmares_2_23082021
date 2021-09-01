@@ -29,13 +29,13 @@ header, section.main-section {
 
     /* Général - Responsive */
 
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 767px) {
 
-        header, section#search {
+        header, section#search, section#activities {
             padding: 0 5%;
         }
 
-        section#results, section#activities {
+        section#results {
             padding: 0 0;
         }
     }
@@ -88,7 +88,7 @@ header a {
  
     /* Header responsive */
 
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 767px) {
 
         header img {
             width: 100px;
@@ -140,7 +140,7 @@ section#search > h2 {
 
     /* Hn responsive */
 
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 767px) {
 
         section#search > h1 {
             font-size: 22px;
@@ -219,7 +219,7 @@ section#search > div.search-bar-container div:nth-child(2) {
 
     /* Search bar - Responsive */
 
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 767px) {
 
         section#search > div.search-bar-container form > input.desktop-search-btn {
             display: none;
@@ -306,7 +306,7 @@ section#search div.filters-container > div.filter-btn > div {
 
     /* Filters - Responsive */
 
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 767px) {
         
         section#search div.filters-container > p {
             width: 100%;
@@ -360,7 +360,7 @@ section#search > div.info-results-container p {
 
 /* Info i - Responsive */
 
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 767px) {
 
         section#search > div.info-results-container {
             align-items: flex-start;
@@ -575,10 +575,12 @@ section#results > .populaires-container .vignette-populaire .img-populaire {
 
     /* Results - Responsive */
 
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 767px) {
 
         section#results {
             flex-wrap: wrap;
+            padding-bottom: 0;
+            margin-bottom: 20px;
         }
         
         section#results > div.results-container {
@@ -621,6 +623,10 @@ section#results > .populaires-container .vignette-populaire .img-populaire {
             height: 130px;
         }
 
+        section#results > div.hebergements-container > p {
+            margin-top: 5px;
+        }
+
 
         /* Populaire - Responsive */
 
@@ -631,7 +637,7 @@ section#results > .populaires-container .vignette-populaire .img-populaire {
     }
 
 
- /* SECTION ACTIVITIES */
+/* SECTION ACTIVITIES */
 
 section#activities {
     margin-top: 40px;
@@ -717,4 +723,54 @@ section#activities > .activities-container {
             height: 47.18%;
             object-position: center 20%;
         }
+
+
+    /* Activités - Responsive */
+
+    @media screen and (max-width: 767px) {
+
+        section#activities {
+            margin-top: 0;
+        }
+
+        section#activities > .activities-container {
+            height: auto;
+        }
+
+        section#activities > .activities-container > .vignette-activities {
+            width: 100%;
+            margin-bottom: 25px;
+            height: 190px;
+        }
+
+            section#activities > .activities-container > .vignette-activities > img {
+                height: 68.95%;
+            }
+
+            section#activities > .activities-container > .activity-1 > img {
+                object-position: center 20%;
+            }
+
+            section#activities > .activities-container > .activity-2 > img {
+                object-position: center 45%;
+            }
+
+            section#activities > .activities-container > .activity-3 > img {
+                object-position: center 20%;
+            }
+
+            section#activities > .activities-container > .activity-4 > img  {
+                object-position: center 20%;
+            }
+
+            section#activities > .activities-container > .activity-5 > img {
+                object-position: center 15%;
+            }
+
+            section#activities > .activities-container > .activity-6 > img {
+                object-position: center 30%;
+            }
+         
+
+    }
 
