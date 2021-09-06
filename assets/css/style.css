@@ -548,17 +548,15 @@ section#results > div.hebergements-container > p {
 /* Populaires */
 
 section#results > .populaires-container {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
 
 section#results > .populaires-container .vignettes-container {
-    flex-grow: 1;
+    /*height: 100%;*/
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    align-content: space-between;
 }
 
 section#results > .populaires-container div.vignette-populaire {
@@ -574,23 +572,19 @@ section#results > .populaires-container .vignette-populaire .img-populaire {
     min-width: 40%;
 }
 
-    section#results > div.populaires-container .vignette-populaire .img-populaire.img-1{
-        background: center / cover url("../img/hotel-le-soleil-du-matin-small-532x355.jpg") lightgrey;
-    }
-
-    section#results > div.populaires-container .vignette-populaire .img-populaire.img-2{
-        background: center / cover url("../img/au-coeur-de leau-chambre-dhotes-small-504x378.jpg") lightgrey;
-    }
-
-    section#results > div.populaires-container .vignette-populaire .img-populaire.img-3{
-        background: center / cover url("../img/hotel-tou-bleu-et-blanc-small-500x750.jpg") lightgrey;
+   section#results > div.populaires-container .vignette-populaire .img-populaire img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 16px  0 0 16px;
     }
 
     section#results > div.populaires-container .vignette-populaire .texte-vignette {
         padding-right: 20px;
         padding-top: 10px;
         padding-bottom: 3px;
-        display:flex;
+        display: flex;
         flex-direction: column;
     }
     
@@ -602,20 +596,40 @@ section#results > .populaires-container .vignette-populaire .img-populaire {
 
 
 
-
-
     /* Results - Responsive */
+
+    @media screen and (max-width: 1200px) {
+
+        section#results {
+            flex-wrap: wrap;
+        }
+
+        section#results > div.results-container {
+            width: 100%;
+        }
+        
+        /* Hébergement - Responsive - tablet */
+        section#results > .results-container.hebergements-container {
+            order: 2;
+            margin-right: 0;
+        }
+
+        section#results > div.hebergements-container .vignette-hebergement {
+            width: 48%;
+        }
+
+        
+
+    }
 
     @media screen and (max-width: 767px) {
 
         section#results {
-            flex-wrap: wrap;
             padding-bottom: 0;
             margin-bottom: 20px;
         }
         
         section#results > div.results-container {
-            width: 100%;
             border-radius: 0;
             padding: 35px 5%;
             border-radius: 0;
@@ -638,12 +652,10 @@ section#results > .populaires-container .vignette-populaire .img-populaire {
             font-size: 13px;
         }
 
-        /* Hébergement - Responsive */
+        /* Hébergement - Responsive - mobile*/
 
-        section#results > .results-container.hebergements-container {
+        section#results > div.results-container.hebergements-container {
             background-color: white;
-            margin-right: 0;
-            order: 2;
         }
 
         section#results > div.hebergements-container .vignette-hebergement {
@@ -657,13 +669,75 @@ section#results > .populaires-container .vignette-populaire .img-populaire {
         section#results > div.hebergements-container > p {
             margin-top: 5px;
         }
+    }
 
 
-        /* Populaire - Responsive */
+    /* Populaire - Responsive */
+
+    /* Populaire - Responsive - tablet */
+    @media screen and (max-width: 1200px) {
+            
+        section#results > .populaires-container {
+            margin-bottom: 30px;
+        }
+
+        section#results > .populaires-container > .vignettes-container {
+            flex-direction: row;
+            justify-content: space-between;
+            /*flex-wrap: nowrap;*/
+        }
 
         section#results > .populaires-container div.vignette-populaire {
+            width: 30%;
+            height: auto;
+            flex-wrap: wrap;
+            flex-direction: column;
+            /*height: auto;*/
+        }
+
+        section#results > .populaires-container div.vignette-populaire .img-populaire {
+            width: 100%;
+            min-width: 100%;
+            height: 30%;
+            border-radius: 16px 16px 0 0;
+            /*flex-direction: column;*/
+            /*height: auto;*/
+        }
+
+        section#results > .populaires-container div.vignette-populaire .img-populaire img {
+            border-radius: 16px 16px 0 0;
+        }
+    }
+
+    /* Populaire - Responsive - mobile */
+    @media screen and (max-width:767px) {
+
+        section#results > .populaires-container {
+            margin-bottom: 0;
+        }
+
+        section#results > .populaires-container > .vignettes-container {
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        section#results > .populaires-container div.vignette-populaire {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width: 100%;
             height: 140px!important;
             margin-bottom: 10px!important;
+        }
+
+        section#results > .populaires-container div.vignette-populaire .img-populaire {
+            width: 40%;
+            min-width: 40%;
+            height: 100%;
+            border-radius: 16px 0 0 16px;
+        }
+
+        section#results > .populaires-container div.vignette-populaire .img-populaire img {
+            border-radius: 16px 0 0 16px;
         }
     }
 
