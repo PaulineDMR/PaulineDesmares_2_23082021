@@ -13,6 +13,11 @@ body {
     justify-content: center;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 main {
     width: 100%;
     max-width: 1440px;
@@ -509,8 +514,12 @@ section#results > div.hebergements-container > .vignettes-container {
     justify-content: space-between;
 }
 
-section#results > div.hebergements-container .vignette-hebergement {
+section#results > div.hebergements-container > .vignettes-container a{
     width: 31%;
+}
+
+section#results > div.hebergements-container .vignette-hebergement {
+    /*width: 31%;*/
 }
 
 section#results > div.hebergements-container .vignette-hebergement .img-hebergement {
@@ -582,7 +591,7 @@ section#results > .populaires-container .vignette-populaire .img-populaire {
         align-items: flex-end;
     }
 
-    
+
     /* Results - Responsive */
 
     @media screen and (max-width:1200px) {
@@ -593,24 +602,6 @@ section#results > .populaires-container .vignette-populaire .img-populaire {
 
         section#results > div.results-container {
             width: 100%;
-        }
-    }
-    
-    /* Hébergement - Responsive - tablet */
-    @media screen and (max-width:1200px) {
-        section#results > .results-container.hebergements-container {
-            order: 2;
-            margin-right: 0;
-        }
-
-        section#results > div.hebergements-container .vignette-hebergement {
-            width: 31%;
-        }
-    }
-
-    @media screen and (max-width:680px) {
-        section#results > div.hebergements-container .vignette-hebergement {
-            width: 48%;
         }
     }
 
@@ -644,6 +635,24 @@ section#results > .populaires-container .vignette-populaire .img-populaire {
             font-size: 13px;
         }
     }
+    
+    /* Hébergement - Responsive - tablet */
+    @media screen and (max-width:1200px) {
+        section#results > .results-container.hebergements-container {
+            order: 2;
+            margin-right: 0;
+        }
+
+        section#results > div.hebergements-container .vignette-hebergement a {
+            width: 31%;
+        }
+    }
+
+    @media screen and (max-width:680px) {
+        section#results > div.hebergements-container .vignette-hebergement a {
+            width: 48%;
+        }
+    }
 
     /* Hébergement - Responsive - mobile*/
     @media screen and (max-width:640px) {
@@ -651,7 +660,7 @@ section#results > .populaires-container .vignette-populaire .img-populaire {
             background-color: white;
         }
 
-        section#results > div.hebergements-container .vignette-hebergement {
+        section#results > div.hebergements-container > .vignettes-container a{
             width: 100%;
         }
 
