@@ -26,6 +26,10 @@ header, section.main-section, footer {
     padding: 0 50px;
 }
 
+.vignette-hebergement, .vignette-populaire, .vignette-activities {
+    cursor: pointer;
+}
+
 
     /* Général - Responsive */
 
@@ -837,7 +841,7 @@ section#activities > .activities-container {
 
 
     /* Activités - Responsive */
-
+    
     @media screen and (max-width: 767px) {
 
         section#activities {
