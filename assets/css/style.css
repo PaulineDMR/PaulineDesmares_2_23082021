@@ -516,31 +516,15 @@ section#results > div.hebergements-container .vignette-hebergement {
 section#results > div.hebergements-container .vignette-hebergement .img-hebergement {
     border-radius: 16px 16px 0 0;
     width: 100%;
-    height: 122px;
+    background-color: lightgray;
 }
 
-    section#results > div.hebergements-container .vignette-hebergement .img-hebergement.img-1{
-        background: center / cover url("../img/auberge-cannebiere-small-750x500.jpg") lightgrey;
-    }
-
-    section#results > div.hebergements-container .vignette-hebergement .img-hebergement.img-2{
-        background: center / cover url("../img/hotel-du-port-small-684X456.jpg") lightgrey;
-    }
-
-    section#results > div.hebergements-container .vignette-hebergement .img-hebergement.img-3{
-        background: center / cover url("../img/hotel-les-mouettes-small-750x500.jpg") lightgrey;
-    }
-
-    section#results > div.hebergements-container .vignette-hebergement .img-hebergement.img-4{
-        background: center / cover url("../img/hotel-de-la-mer-small-500x467.jpg") lightgrey;
-    }
-
-    section#results > div.hebergements-container .vignette-hebergement .img-hebergement.img-5{
-        background: center / cover url("../img/auberge-le-panier-small-652x367.jpg") lightgrey;
-    }
-
-    section#results > div.hebergements-container .vignette-hebergement .img-hebergement.img-6{
-        background: center / cover url("../img/hotel-chez-amina-small-486x729.jpg") lightgrey;
+   section#results > div.hebergements-container .vignette-hebergement .img-hebergement img {
+        width: 100%;
+        height: 122px;
+        object-fit: cover;
+        display: block;
+        border-radius: 16px 16px 0 0;
     }
 
 section#results > div.hebergements-container > p {
@@ -560,6 +544,7 @@ section#results > .populaires-container .vignettes-container {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
+    height: 100%;
 }
 
 section#results > .populaires-container div.vignette-populaire {
@@ -597,8 +582,7 @@ section#results > .populaires-container .vignette-populaire .img-populaire {
         align-items: flex-end;
     }
 
-
-
+    
     /* Results - Responsive */
 
     @media screen and (max-width:1200px) {
@@ -799,15 +783,9 @@ section#activities > .activities-container {
             font-size: 16px;
         }
 
-
-
     section#activities > .activities-container > .activity-1, section#activities > .activities-container > .activity-4 {
         height: 100%;
     }
-
-        section#activities > .activities-container > .activity-1 > img, section#activities > .activities-container > .activity-4 > img {
-            /*filter: brightness(1.3);*/ /* en attente de réponse grégoire */
-        }
 
     section#activities > .activities-container > .activity-2 {
         height: 52.8%;
