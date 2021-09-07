@@ -557,7 +557,6 @@ section#results > .populaires-container {
 }
 
 section#results > .populaires-container .vignettes-container {
-    /*height: 100%;*/
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
@@ -683,7 +682,6 @@ section#results > .populaires-container .vignette-populaire .img-populaire {
 
 
     /* Populaire - Responsive */
-
     /* Populaire - Responsive - tablet */
     @media screen and (max-width: 1200px) {
             
@@ -694,33 +692,37 @@ section#results > .populaires-container .vignette-populaire .img-populaire {
         section#results > .populaires-container > .vignettes-container {
             flex-direction: row;
             justify-content: space-between;
-            /*flex-wrap: nowrap;*/
         }
 
         section#results > .populaires-container div.vignette-populaire {
-            width: 30%;
+            width: 31%;
             height: auto;
             flex-wrap: wrap;
             flex-direction: column;
-            /*height: auto;*/
         }
 
         section#results > .populaires-container div.vignette-populaire .img-populaire {
             width: 100%;
             min-width: 100%;
-            height: 30%;
             border-radius: 16px 16px 0 0;
-            /*flex-direction: column;*/
-            /*height: auto;*/
         }
 
         section#results > .populaires-container div.vignette-populaire .img-populaire img {
             border-radius: 16px 16px 0 0;
+            height: 120px;
+        }
+
+        section#results > div.populaires-container .vignette-populaire .texte-vignette {
+            flex-grow: 2;
+        }
+        
+        section#results > div.populaires-container .vignette-populaire .texte-vignette {
+            padding-top: 0;
         }
     }
 
     /* Populaire - Responsive - mobile */
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:680px) {
 
         section#results > .populaires-container {
             margin-bottom: 0;
@@ -748,6 +750,11 @@ section#results > .populaires-container .vignette-populaire .img-populaire {
 
         section#results > .populaires-container div.vignette-populaire .img-populaire img {
             border-radius: 16px 0 0 16px;
+            height: 100%;
+        }
+
+        section#results > div.populaires-container .vignette-populaire .texte-vignette {
+            padding-top: 10px;
         }
     }
 
