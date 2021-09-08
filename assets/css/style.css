@@ -518,10 +518,6 @@ section#results > div.hebergements-container > .vignettes-container a{
     width: 31%;
 }
 
-section#results > div.hebergements-container .vignette-hebergement {
-    /*width: 31%;*/
-}
-
 section#results > div.hebergements-container .vignette-hebergement .img-hebergement {
     border-radius: 16px 16px 0 0;
     width: 100%;
